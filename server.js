@@ -16,7 +16,7 @@ const io  = require('socket.io')(3000)
 // var random = new TimeSeries();
 
 //generate random data 
-var rand = Math.random() * 10000
+var rand = 100
 
 io.on('connection', socket => {
     console.log("connected")
