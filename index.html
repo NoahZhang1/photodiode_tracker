@@ -2,12 +2,28 @@
 <html>
   <head>
     <script type="text/javascript" src="node_modules/smoothie/smoothie.js"></script>
-    <script defer src = "http://localhost:3000/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src = "script.js"></script>
-  </head>
-  <body onload="createTimeline()" style="background-color:#333333">
+    <script src = "http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <!-- <script type="text/javascript" src = "script.js"></script> -->
 
-    <canvas id="chart" width="100" height="100"></canvas>
+    <!-- <script type="text/javascript">
+      var L1 = new TimeSeries();
+
+      setInterval(function() {
+        L1.append(Date.now(), Math.random() * 10000);
+      }, 500);
+      
+      function createTimeline() {
+        var chart = new SmoothieChart();
+        chart.addTimeSeries(L1, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: 'rgba(0, 255, 0, 0.2)', lineWidth: 4 });
+        chart.streamTo(document.getElementById("chart"), 500);
+      }
+    </script> -->
+
+  </head>
+  <!-- <body onload="createTimeline()" style="background-color:#333333"> --> -->
+  <body onload = createTimeline() style="background-color:#333333"> -->
+    <canvas id="chart" width="400" height="100"></canvas>
 
   </body>
 </html>
