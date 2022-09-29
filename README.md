@@ -4,10 +4,10 @@
 ### Quick Start to Start Local Testing
 ```
 $npm init
-$npm i socket.io
-$npm install smoothie
-$npm --save-dev nodemon
+$npm install
 ```
+
+Makes sure the arduino board is plugged in correct port (by default it's COM4)
 
 After these, run
 ```
