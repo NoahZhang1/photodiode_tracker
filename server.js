@@ -38,8 +38,10 @@ io.on('connection', function(socket) {
 
 parser.on('data', function(data){
 
-    // console.log(data);
     // socket.emit('message',data)
+    // var parsedData = data.split(',')
+    // console.log("system time", Date.now())
+    // console.log(parsedData[0]);
 
     io.emit('data', data)
 
@@ -50,12 +52,3 @@ parser.on('data', function(data){
 })
 
 app.listen(3000);
-// io.on('connection', function(data){
-
-//     socket.emit('message', data)
-// })
-
-
-
-// //generate random data, this will later be the reading of photodiode
-// var rand = 100;
